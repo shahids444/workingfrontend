@@ -1,0 +1,158 @@
+[
+   
+        {
+            "name": "Velumuri Vistas",
+            "category": "apartments",
+            "location": "Morampudi, Rajahmundry",
+            "description": "A premium apartment complex with modern amenities, including 24/7 security, gym, and children's play area.",
+            "contact": "+91 9876543210",
+            "website": "www.srisairesidency.com",
+            "image": "https://teja12.kuikr.com/is/a/c/1200x500/gallery_images/original/cf62eb6be6bbd80.gif"
+        },
+        {
+            "name": "Mighty Hills",
+            "category": "apartments",
+            "location": "Swarop Nagar, Rajahmundry",
+            "description": "A well-designed residential complex with 2BHK and 3BHK flats, community hall, and ample parking.",
+            "contact": "+91 8765432109",
+            "website": "www.lakshmitowers.com",
+            "image": "https://newprojects.99acres.com/projects/mighty_e_homes/mighty_orchid/images/xnwebyx_1736502139_554279605_med.jpg"
+        },
+  
+ 
+        {
+            "name": "Pv Satish",
+            "category": "houses",
+            "location": "kakinada, Rajahmundry, A P",
+            "description": "Independent luxury villas with spacious interiors and eco-friendly construction.",
+            "contact": "+91 9988776655",
+            "website": "www.greenvillasrajahmundry.com",
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fhousing.com%2Fin%2Fbuy%2Fresale%2Fpage%2F15337844-2-bhk-independent-house-in-sholinganallur-for-rs-10500000&psig=AOvVaw3JLpB8hRlOOaQ2opHIenbp&ust=1740393186253000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCh3_7L2YsDFQAAAAAdAAAAABAQ"
+        },
+        {
+            "name": "Royal Homes",
+            "category": "houses",
+            "location": "Danavaipeta, Rajahmundry",
+            "description": "Beautifully crafted individual houses with modern amenities and gated security.",
+            "contact": "+91 887*655*",
+            "website": "www.royalhomes.com",
+            "image": "https://5.imimg.com/data5/SELLER/Default/2021/5/TA/UW/ZD/53256000/d9-500x500.jpg"
+        },
+   
+        {
+            "name": "Rajahmundry Business Hub",
+            "category": "offices",
+            "location": "Main Road, Rajahmundry",
+            "description": "A premium business complex offering co-working spaces and private offices for startups and enterprises.",
+            "contact": "+91 99112233**",
+            "website": "www.rbh.com",
+            "image": "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_261,w_5000,h_2812,c_crop,q_80,fl_progressive/w_900,h_506,f_auto,c_fit/manjeera-international-convention-centre/DSC01131_qemapt"
+        },
+        {
+            "name": "WorkNest Office Spaces",
+            "category": "offices",
+            "location": "Innespeta, Rajahmundry",
+            "description": "Flexible office spaces with conference rooms, high-speed internet, and power backup.",
+            "contact": "+91 9900887*",
+            "website": "www.worknestrajahmundry.com",
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.justdial.com%2FRajahmundry%2FOffices-On-Rent-in-Innes-Peta%2Fnct-11209271&psig=AOvVaw0Ab01_pMXUVZ503anFrAiQ&ust=1740395606613000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCRuobV2YsDFQAAAAAdAAAAABAJ"
+        },
+   
+
+        {
+            "name": "SR Commercial Complex",
+            "category": "commercial_spaces",
+            "location": "Main Road, Rajahmundry",
+            "description": "A multi-floor commercial complex with retail shops and office spaces for rent.",
+            "contact": "+91 9845332211",
+            "website": "www.srcommercial.com",
+            "image": "https://example.com/images/sr_commercial.jpg"
+        },
+        {
+            "name": "GVK Business Park",
+            "category": "commercial_spaces",
+            "location": "Prakasam Nagar, Rajahmundry",
+            "description": "A modern business park with corporate office spaces and retail outlets.",
+            "contact": "+91 9776655433",
+            "website": "www.gvkpark.com",
+            "image": "https://example.com/images/gvk_business_park.jpg"
+        },
+   
+
+        {
+            "name": "Smart Parking Solutions",
+            "category": "parking_lots",
+            "location": "Kotipalli Bus Stand, Rajahmundry",
+            "description": "Secure and automated parking services with hourly and monthly rental options.",
+            "contact": "+91 9866554433",
+            "image": "https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-981-19-2184-1_4/MediaObjects/515410_1_En_4_Fig2_HTML.png"
+        },
+        {
+            "name": "Metro Car Parking",
+            "category": "parking_lots",
+            "location": "Railway Station, Rajahmundry",
+            "description": "Spacious parking facility with CCTV surveillance and valet services.",
+            "contact": "+91 9654321890",
+            "image": "https://content.jdmagicbox.com/v2/comp/chennai/c3/044pxx44.xx44.191120195248.h7c3/catalogue/saidapet-metro-chennai-f73zx5chxi.jpg"
+        },
+ 
+  
+        {
+            "name": "Aroma Multi-Cuisine Restaurant",
+            "category": "restaurants",
+            "location": "Sri Conventions, Bommuru to Keshavapuram Road, Rajahmundry, Andhra Pradesh",
+            "description": "A fine dining restaurant offering Indian, Chinese, and Continental cuisines.",
+            "contact": "+91  96192 56789",
+            "website": "www.aromarestaurant.com",
+            "image": "https://b.zmtcdn.com/data/reviews_photos/ab8/4ae7f0005379ebbb9edf0aaa837adab8_1722270916.jpg"
+        },
+        {
+            "name": "Spice Garden",
+            "category": "restaurants",
+            "location": "AV Appa Rao Road, Rajahmundryy",
+            "description": "A family-friendly restaurant known for its Andhra-style biryani and tandoori dishes.",
+            "contact": "+91 8765432198",
+            "website": "www.spicegardenrajahmundry.com",
+            "image": "https://content.jdmagicbox.com/comp/rajahmundry/r1/9999px883.x883.230301020024.w8r1/catalogue/food-garden-danavaipeta-rajahmundry-restaurants-0q3s47ucyj.jpg"
+        },
+ 
+        {
+            "name": "Sri Ganesh Tiles & Sanitary",
+            "category": "businesses",
+            "location": "Dowlaiswaram, East Godavari4209, Mart, Rajamahe, Rajahmundry, Dowlaiswaram, Dowlaiswaram, East Godavari - 533125 (Opposite Lakshmi Narsimha Swamy Temple,Near Timber)",
+            "description": "Wholesale and retail supplier of construction materials and hardware.",
+            "contact": "+91 7947123409",
+            "website": "www.google.com/Sri Ganesh Tiles",
+            "image": "https://lh3.googleusercontent.com/p/AF1QipNuq-7zBgSt4zBQvyCGV6YLVUltMgFaPjdru8r8=s1360-w1360-h1020"
+        },
+        {
+            "name": "Vinayaka Enterprises",
+            "category": "businesses",
+            "location": "Prakasam Nagar, Rajahmundry",
+            "description": "Leading distributor of electronics and home appliances.",
+            "contact": "+91 9789789789",
+            "website": "www.vinayakaenterprises.com",
+            "image": "https://content.jdmagicbox.com/comp/rajahmundry/c5/9999px883.x883.140314230142.c7c5/catalogue/ganesh-enterpreneurs-rajahmundry-1mtuuzne4m.jpg"
+        },
+  
+   
+        {
+            "name": "Kodali Homes",
+            "category": "land_businesses",
+            "location": "Konthamuru, Rajahmundry",
+            "description": "Experts in land surveying, environmental impact assessments, and GPS-based mapping.",
+            "contact": "+91 980**54*",
+            "website": "www.google.com/KodaliHomes",
+            "image": "https://housing-images.n7net.in/01c16c28/086c6e54925785602ab99bd539a77145/v0/fs-large/residential_plot-for-sale-konthamuru-Rajahmundry-plot_view.jpg"
+        },
+        {
+            "name": "Ramesh",
+            "category": "land_businesses",
+            "location": "Hukumpeta, Rajahmundry, A P 158 sq yards land for sale in hukumpeta. Land includes a shed with 2 rooms. Beside hukumpeta panchayati office and sachivaalayam.",
+            "description": "Specialized in underground water and geological surveys for land development projects.",
+            "contact": "+91 98**543*",
+            "website": "www.mizudetectors.com",
+            "image": "https://imagecdn.99acres.com/media1/28444/14/568894891O-1739350717724.jpg"
+        }
+    
+    ]

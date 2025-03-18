@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const ContactsList = () => {
+const ReviewsList = () => {
   const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -42,24 +42,16 @@ const ContactsList = () => {
 
   return (
     <div className="container5">
-      <h2>Contact List</h2>
+      <h2>Reviews List</h2>
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Subject</th>
             <th>Message</th>
           </tr>
         </thead>
         <tbody>
           {contacts.map((contact) => (
             <tr key={contact._id}>
-              <td>{contact.name}</td>
-              <td>{contact.email}</td>
-              <td>{contact.phone || "N/A"}</td>
-              <td>{contact.subject || "N/A"}</td>
               <td>{contact.message || "No message"}</td>
               <td>
                 {" "}
@@ -79,4 +71,4 @@ const ContactsList = () => {
   );
 };
 
-export default ContactsList;
+export default ReviewsList;

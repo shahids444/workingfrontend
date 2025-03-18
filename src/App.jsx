@@ -16,60 +16,84 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import OtpVerification from "./components/OtpVerification";
 import ProtectedRoute from "./components/ProtectedRoute";
-import './App.css'
+import "./App.css";
 import BlogList from "./components/BlogList";
 import ContactsList from "./components/ContactsList";
 import Userdashboard from "./components/Userdashboard";
 import Admindashboard from "./components/Admindashboard";
-
+import UserEdit from "./components/UserEdit";
+import axios from "axios";
+import ReviewsList from "./components/ReviewsList";
+import UsersList from "./components/UsersList";
+import TestinomalPage from "./components/TestinomalPage";
+import SearchResults from "./components/SearchResults";
 const blogPostLoader = async ({ params }) => {
-  const response = await fetch(`https://backend-v0ii.onrender.com/api/blogs/${params.id}`);
+  const response = await fetch(
+    `https://workingbackend-i34e.onrender.com/api/blogs/${params.id}`
+  );
   if (!response.ok) throw new Response("Not Found", { status: 404 });
   return response.json();
 };
 const blogsLoader = async () => {
-  const response = await fetch(`https://backend-v0ii.onrender.com/api/blogs/`);
+  const response = await fetch(
+    `https://workingbackend-i34e.onrender.com/api/blogs/`
+  );
   if (!response.ok) throw new Response("Not Found", { status: 404 });
   return response.json();
 };
 
 const router = createBrowserRouter([
-  { path: "/", element: <Homepage />},
+  { path: "/", element: <Homepage /> },
+  { path: "/profile", element: <UserEdit /> },
   { path: "/about", element: <Aboutus /> },
   { path: "/login", element: <Login /> },
   { path: "/signup", element: <Signup /> },
   { path: "/otpverify", element: <OtpVerification /> },
-  { path: "/blog", element: <Blog /> ,loader: blogsLoader},
-  { path: "/blog/:id", element: <Blog_specific_page />, loader: blogPostLoader },
+  { path: "/blog", element: <Blog />, loader: blogsLoader },
+  {
+    path: "/blog/:id",
+    element: <Blog_specific_page />,
+    loader: blogPostLoader,
+  },
   { path: "/contact", element: <Contact /> },
+  { path: "/search", element: <SearchResults /> },
   { path: "/categories", element: <Listing_categories /> },
   { path: "/pricing", element: <Pricing /> },
   { path: "/listings", element: <Listing_page /> },
   { path: "/custom", element: <Custom_page /> },
   { path: "/dashboard", element: <Userdashboard /> },
-  { path: "/admindashboard", element: <OtpVerification><Admindashboard /></OtpVerification> },
-
+  {
+    path: "/admindashboard",
+    element: (
+      <OtpVerification>
+        <Admindashboard />
+      </OtpVerification>
+    ),
+  },
 
   {
     path: "/listing/:id",
     element: <Listing_specific_page />,
-    loader: async ({ params }) => {  // Correctly destructure params
+    loader: async ({ params }) => {
+      // Correctly destructure params
       const [datasen, products] = await Promise.all([
-        fetch(`https://backend-v0ii.onrender.com/api/products/${params.id}`),  // Use params.id
-        fetch("https://backend-v0ii.onrender.com/api/products/")
+        fetch(
+          `https://workingbackend-i34e.onrender.com/api/products/${params.id}`
+        ), // Use params.id
+        fetch("https://workingbackend-i34e.onrender.com/api/products/"),
       ]);
-  
+
       if (!datasen.ok || !products.ok) {
         throw new Error("Failed to fetch data");
       }
-  
+
       const data = await datasen.json();
       const product = await products.json();
-  
+
       return { data, product };
     },
   },
-  
+
   // ✅ Protected Route for "/add"
   {
     path: "/add",
@@ -79,22 +103,62 @@ const router = createBrowserRouter([
       </ProtectedRoute>
     ),
   },
-  { path: "/contactdata", element: (
-    <ProtectedRoute>
-      <ContactsList />
-    </ProtectedRoute>
-  ), },
-  { path: "/blogedit", element: (
-    <ProtectedRoute>
-      <BlogList />
-    </ProtectedRoute>
-  ), },
-  { path: "/createblog", element:  ( <ProtectedRoute>
-    <BlogForm />
-  </ProtectedRoute>), },
-  { path: "/edit", element: ( <ProtectedRoute>
-    <ProductList />
-  </ProtectedRoute>), },
+  {
+    path: "/contactdata",
+    element: (
+      <ProtectedRoute>
+        <ContactsList />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/blogedit",
+    element: (
+      <ProtectedRoute>
+        <BlogList />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/usersdata",
+    element: (
+      <ProtectedRoute>
+        <UsersList />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/testinomals",
+    element: (
+      <ProtectedRoute>
+        <TestinomalPage />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/reviews",
+    element: (
+      <ProtectedRoute>
+        <ReviewsList />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/createblog",
+    element: (
+      <ProtectedRoute>
+        <BlogForm />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/edit",
+    element: (
+      <ProtectedRoute>
+        <ProductList />
+      </ProtectedRoute>
+    ),
+  },
 ]);
 
 function App() {

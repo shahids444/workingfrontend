@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 import img from './shahid.jpg'
-import img1 from './vinay.jpg'
+import img1 from './shahid.jpg'
 import Navbar from "./Navbar";
 import { FaArrowRight } from "react-icons/fa";
 function Aboutus() {

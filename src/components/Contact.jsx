@@ -28,11 +28,14 @@ export default function Contact() {
     setSuccess(null);
 
     try {
-      const response = await fetch("https://backend-v0ii.onrender.com/api/contacts/createContact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://workingbackend-i34e.onrender.com/api/contacts/createContact",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await response.json();
 
@@ -50,19 +53,34 @@ export default function Contact() {
   return (
     <>
       <div>
-        
         <Navbar />
 
-        <div id="breadcrumb_part" style={{ backgroundImage: "url(https://dirlist.websolutionus.com/uploads/website-images/banner-2021-08-31-09-49-39-2671.jpg)" }}>
+        <div
+          id="breadcrumb_part"
+          style={{
+            backgroundImage:
+              "url(https://dirlist.websolutionus.com/uploads/website-images/banner-2021-08-31-09-49-39-2671.jpg)",
+          }}
+        >
           <div className="bread_overlay">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-12 text-center text-white">
                   <h4>Contact Us</h4>
-                  <nav style={{ "--bs-breadcrumb-divider": "'>'" }} aria-label="breadcrumb">
+                  <nav
+                    style={{ "--bs-breadcrumb-divider": "'>'" }}
+                    aria-label="breadcrumb"
+                  >
                     <ol className="breadcrumb">
-                      <li className="breadcrumb-item"><a href="/">Home</a></li>
-                      <li className="breadcrumb-item active" aria-current="page">Contact Us</li>
+                      <li className="breadcrumb-item">
+                        <a href="/">Home</a>
+                      </li>
+                      <li
+                        className="breadcrumb-item active"
+                        aria-current="page"
+                      >
+                        Contact Us
+                      </li>
                     </ol>
                   </nav>
                 </div>
@@ -81,7 +99,11 @@ export default function Contact() {
                     <i className="fal fa-phone-square-alt" />
                   </div>
                   <div className="contact_box_text">
-                    <p>(347) 430-9510<br />(587) 860-2590</p>
+                    <p>
+                      (347) 430-9510
+                      <br />
+                      (587) 860-2590
+                    </p>
                   </div>
                 </div>
                 <div className="contact_box">
@@ -106,39 +128,86 @@ export default function Contact() {
                 <h2>Contact Here</h2>
 
                 {error && <div className="alert alert-danger">{error}</div>}
-                {success && <div className="alert alert-success">{success}</div>}
+                {success && (
+                  <div className="alert alert-success">{success}</div>
+                )}
 
                 <form id="contactForm" onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-xl-6">
                       <div className="contact_input">
-                        <input type="text" placeholder="Name" name="name" value={formData.name} onChange={handleChange} required />
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          required
+                        />
                       </div>
                     </div>
                     <div className="col-xl-6">
                       <div className="contact_input">
-                        <input type="email" placeholder="Email" name="email" value={formData.email} onChange={handleChange} required />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          required
+                        />
                       </div>
                     </div>
                     <div className="col-xl-6">
                       <div className="contact_input">
-                        <input type="text" placeholder="Phone" name="phone" value={formData.phone} onChange={handleChange} required />
+                        <input
+                          type="text"
+                          placeholder="Phone"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          required
+                        />
                       </div>
                     </div>
                     <div className="col-xl-6">
                       <div className="contact_input">
-                        <input type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} required />
+                        <input
+                          type="text"
+                          name="subject"
+                          placeholder="Subject"
+                          value={formData.subject}
+                          onChange={handleChange}
+                          required
+                        />
                       </div>
                     </div>
                     <div className="col-xl-12">
                       <div className="contact_input">
-                        <textarea name="message" cols={3} rows={5} placeholder="Message" value={formData.message} onChange={handleChange} required />
+                        <textarea
+                          name="message"
+                          cols={3}
+                          rows={5}
+                          placeholder="Message"
+                          value={formData.message}
+                          onChange={handleChange}
+                          required
+                        />
                       </div>
                     </div>
                     <div className="col-xl-12">
                       <div className="contact_input">
-                        <button id="contactBtn" className="read_btn" type="submit" disabled={loading}>
-                          {loading ? <i className="fas fa-sync fa-spin" /> : "Send Message"}
+                        <button
+                          id="contactBtn"
+                          className="read_btn"
+                          type="submit"
+                          disabled={loading}
+                        >
+                          {loading ? (
+                            <i className="fas fa-sync fa-spin" />
+                          ) : (
+                            "Send Message"
+                          )}
                         </button>
                       </div>
                     </div>

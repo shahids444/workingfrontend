@@ -17,7 +17,7 @@ const BlogForm = () => {
     let sendtoken = localStorage.getItem("token");
     try {
       const response = await fetch(
-        "https://backend-v0ii.onrender.com/api/blogs/createBlog",
+        "https://workingbackend-i34e.onrender.com/api/blogs/createBlog",
         {
           method: "POST",
           headers: {

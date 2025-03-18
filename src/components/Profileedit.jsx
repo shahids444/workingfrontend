@@ -3,7 +3,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import axios from "axios"; // Import Axios
 
-function Signup() {
+function Profileedit() {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
   const [profileImage, setProfileImage] = useState(null);
@@ -72,7 +72,7 @@ function Signup() {
       setFormData({ name: "", email: "", password: "", confirmPassword: "" });
       setProfileImage(null);
     } catch (err) {
-      setError("Username or email already exists!");
+      setError(err.response?.data?.message || "Something went wrong!");
     }
 
     setLoading(false);
@@ -301,4 +301,4 @@ const profileImageStyle = {
   border: "2px solid #3b82f6",
 };
 
-export default Signup;
+export default Profileedit;

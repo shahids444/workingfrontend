@@ -13,7 +13,7 @@ const ProductList = () => {
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          "https://backend-v0ii.onrender.com/api/products/"
+          "https://workingbackend-i34e.onrender.com/api/products/"
         );
         if (!response.ok) throw new Error("Failed to fetch products");
 
@@ -32,7 +32,7 @@ const ProductList = () => {
   const handleDelete = async (id) => {
     try {
       const response = await fetch(
-        `https://backend-v0ii.onrender.com/api/products/${id}`,
+        `https://workingbackend-i34e.onrender.com/api/products/${id}`,
         {
           method: "DELETE",
         }
@@ -64,7 +64,7 @@ const ProductList = () => {
 
     try {
       const response = await fetch(
-        `https://backend-v0ii.onrender.com/api/products/${editProduct}`,
+        `https://workingbackend-i34e.onrender.com/api/products/${editProduct}`,
         {
           method: "PUT",
           headers: {

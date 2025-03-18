@@ -1295,7 +1295,7 @@ function Homepage() {
                                 className="red"
                                 style={{
                                   position: "absolute",
-                                  left: 200,
+                                  left: 150,
                                   width: "100px",
                                 }}
                                 href=""
